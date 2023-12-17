@@ -1,0 +1,489 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(52, 50, 50);
+}
+html {
+  font-size: 62.5%;
+}
+.hero_img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./netflix-img/images/header-image.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nav_container {
+  display: flex;
+}
+#nav_logo {
+  width: 90%;
+  margin-top: 2.5rem;
+  margin-left: 16rem;
+}
+.netflix_logo {
+  width: 15rem;
+}
+#nav_btn {
+  margin-top: 2.5rem;
+  height: 3rem;
+  width: 10rem;
+  background-color: rgb(228, 38, 38);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  margin-right: 16rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#nav_btn:hover {
+  background-color: rgb(145, 23, 23);
+}
+/* ------------navbar end ---------- */
+#hero_contant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+}
+#hero_contant_h2 {
+  font-size: 3rem;
+}
+#hero_contant_h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 1.5rem 0rem;
+}
+#hero_contant_h3 {
+  font-size: 2.5rem;
+}
+#hero_contant_btn {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  width: 20rem;
+  color: white;
+  background-color: rgb(192, 32, 32);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#hero_contant_btn a {
+  color: white;
+  text-decoration: none;
+}
+#hero_contant_btn:hover {
+  background-color: rgb(145, 23, 23);
+}
+/* image contant end  */
+.first_container {
+  height: 50rem;
+  width: 100%;
+  background-color: black;
+  margin-top: 0.8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right_panel img {
+  width: 45rem;
+  height: 35rem;
+}
+.panel {
+  margin-right: 5rem;
+}
+.panel_h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.panel_p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.left_panel img {
+  width: 45rem;
+  height: 35rem;
+}
+.left_panel_one img {
+  width: 50rem;
+  height: 40rem;
+}
+/* ------------container end here -----------  */
+.faq {
+  padding: 1rem 12%;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: black;
+  margin-top: 0.8rem;
+}
+.faq h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: white;
+  font-weight: bold;
+}
+.accordion {
+  width: 100%;
+  margin: 6rem auto;
+  max-width: 75rem;
+}
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 0.5rem;
+}
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  font-size: 3rem;
+}
+label::after {
+  position: absolute;
+  content: "+";
+  font-size: 3.4rem;
+  right: 2rem;
+  transition: transform 0.5s;
+}
+input[type="radio"] {
+  display: none;
+}
+.accordion .content {
+  background: #303030;
+  text-align: left;
+  padding: 0rem 2rem;
+  max-height: 0rem;
+  overflow: hidden;
+  color: white;
+  font-size: 2.5rem;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 60rem;
+  padding: 3rem 2rem;
+}
+.accordion input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+/* -----------------foter start --------  */
+.footer_container {
+  background: black;
+  width: 100%;
+  height: auto;
+  margin-top: 0.8rem;
+}
+.first_coumls {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20rem;
+  background-color: black;
+
+  padding-top: 5rem;
+}
+.first_coumls a {
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.colums_sprate {
+  display: flex;
+}
+.foterbtn {
+  margin-top: 3rem;
+  height: 3.5rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: #303030;
+  border: none;
+  border-radius: 0.5rem;
+  align-self: self-start;
+  margin-left: 20rem;
+  width: 12rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.foterbtn:hover {
+  background-color: #211919;
+}
+.Netflix_Pakistan {
+  color: white;
+  margin-top: 3rem;
+  font-size: 2rem;
+
+  margin-bottom: 4rem;
+  align-self: self-start;
+  margin-left: 20rem;
+}
+.btn_clcas {
+  display: flex;
+  text-align: center;
+  background-color: black;
+  flex-direction: column;
+}
+/* media quary start --------------------------------- */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+  #nav_btn {
+    margin-top: 2.5rem;
+    height: 5rem;
+    width: 22rem;
+    font-size: 1.5rem;
+  }
+}
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 810px) {
+  #nav_btn {
+    margin-top: 2.5rem;
+    height: 3.5rem;
+  }
+  #nav_btn {
+    margin-top: 2.5rem;
+    height: 5rem;
+    width: 22rem;
+  }
+  .panel {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .first_coumls a {
+    font-size: 1.6rem;
+  }
+  .first_coumls {
+    padding-left: 8rem;
+  }
+  .foterbtn {
+    height: 4rem;
+    font-size: 2rem;
+
+    width: 15rem;
+  }
+}
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 750px) {
+  #nav_btn {
+    margin-top: 2.5rem;
+    height: 3.5rem;
+  }
+  #nav_btn {
+    margin-top: 2.5rem;
+    height: 5rem;
+    width: 22rem;
+  }
+  .panel {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .first_coumls a {
+    font-size: 1.6rem;
+  }
+  .first_coumls {
+    padding-left: 10rem;
+  }
+  .foterbtn {
+    height: 4rem;
+    font-size: 2rem;
+
+    width: 15rem;
+  }
+  .panel_h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .panel_p {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+}
+
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  #nav_btn {
+    margin-top: 2.5rem;
+    height: 5rem;
+    width: 22rem;
+  }
+  #hero_contant_h1 {
+    font-size: 4.3rem;
+  }
+  .panel {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .colums_sprate {
+    display: flex;
+    flex-direction: column;
+  }
+  .first_coumls a {
+    font-size: 2.5rem;
+  }
+}
+
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 460px) {
+  #nav_logo {
+    width: 90%;
+    margin-top: 2.5rem;
+    margin-left: 10rem;
+  }
+  #nav_btn {
+    width: 20rem;
+  }
+  #hero_contant_h1 {
+    font-size: 3rem;
+  }
+  .first_container {
+    height: 50rem;
+    width: 100%;
+    background-color: black;
+    margin-top: 0.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .panel {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .right_panel img {
+    width: 35rem;
+    height: 25rem;
+  }
+  .left_panel img {
+    width: 35rem;
+    height: 25rem;
+    margin-top: 3rem;
+  }
+  .panel_h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .panel_p {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  .left_panel_one img {
+    width: 35rem;
+    height: 25rem;
+  }
+  .for_colume_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* -------------foter start ------------  */
+  .colums_sprate {
+    display: flex;
+    flex-direction: column;
+  }
+  .first_coumls a {
+    font-size: 2.5rem;
+  }
+}
+/* ---------------------------------------- */
+@media screen and (max-width: 396px) {
+  #nav_logo {
+    width: 90%;
+    margin-top: 2.5rem;
+    margin-left: 8rem;
+  }
+  #hero_contant_h1 {
+    font-size: 3rem;
+  }
+  .first_container {
+    height: 50rem;
+    width: 100%;
+    background-color: black;
+    margin-top: 0.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .panel {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .right_panel img {
+    width: 35rem;
+    height: 25rem;
+  }
+  .left_panel img {
+    width: 35rem;
+    height: 25rem;
+    margin-top: 3rem;
+  }
+  .panel_h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .panel_p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .left_panel_one img {
+    width: 35rem;
+    height: 25rem;
+  }
+  .for_colume_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* -------------foter start ------------  */
+  .colums_sprate {
+    display: flex;
+    flex-direction: column;
+  }
+  .first_coumls a {
+    font-size: 2.5rem;
+  }
+}

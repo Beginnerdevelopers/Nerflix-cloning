@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+#nav_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 9rem;
+  box-shadow: 0rem 0rem 0.1rem black;
+}
+.logo_container img {
+  width: 15rem;
+  margin-left: 5rem;
+}
+.logo_container i {
+  height: 30rem;
+  width: 40rem;
+  background-color: black;
+}
+#nav_container a {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.content_container_step1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.step_one_content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_heading {
+  font-size: 4rem;
+  margin: 0.7rem 0rem;
+}
+.fa-regular {
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.step_one_content ul li {
+  list-style: none;
+  font-size: 2.5rem;
+  margin-top: 1.6rem;
+  margin-left: 3rem;
+}
+.fas {
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+.move_left {
+  margin: 3.5rem;
+}
+#step_one_btn {
+  height: 6.3rem;
+  background-color: red;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  color: white;
+  width: 35rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+/* ---------foter start-------  */
+.footer_div_step_1 {
+  height: 15rem;
+  width: 100%;
+}
+.question_a {
+  padding-left: 8rem;
+  font-size: 2rem;
+}
+.four_colums_div {
+  display: flex;
+}
+.first_div.second_div.third_div,
+a {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  margin-left: 7rem;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.first_div {
+  padding-left: 5.5rem;
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  html {
+    font-size: 45%;
+  }
+  .question_a {
+    font-size: 3.5rem;
+  }
+  .first_div.second_div.third_div,
+  a {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+  }
+  .four_colums_div {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+  }
+  .steps {
+    font-size: 2rem;
+  }
+}
